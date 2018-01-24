@@ -1,9 +1,12 @@
-cd WiringOP/
+echo building wiringpi lib.. 
+cd WiringPi/
+
+sudo chmod +x build
 sudo ./build
-sudo make install
 cd ..
+
+echo building wiringpi python binding.. 
 export CFLAGS="-lwiringPi -lwiringPiDev"
 
 swig2.0 -python -threads wiringpi.i
-sudo python3 setup.py build install
-sudo python3 test.py
+sudo python3 setup.py install

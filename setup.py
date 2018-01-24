@@ -10,7 +10,7 @@ sources += ['wiringpi_wrap.c']
 sources.remove('WiringPi/devLib/piFaceOld.c')
 
 _wiringpi = Extension(
-    '_wiringpi',
+    "_wiringpi",
     include_dirs=['WiringPi/wiringPi','WiringPi/devLib'],
     sources=sources
 )
