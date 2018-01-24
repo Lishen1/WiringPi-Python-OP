@@ -41,6 +41,7 @@
 #include "WiringPi/devLib/maxdetect.h"
 #include "WiringPi/devLib/piGlow.h"
 #include "WiringPi/devLib/piNes.h"
+#include "WiringPi/devLib/hx711.h"
 %}
 
 %apply unsigned char { uint8_t };
